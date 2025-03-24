@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Information Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+  <div id="app" class="container">
+    <h1>Country Information Finder</h1>
+    <div class="search-container">
+    <input type="text" v-model="countryName" placeholder="Enter country name">
+    <button @click="fetchCountryData" class="search-button">Search</button>
+    </div>
+
+    <!-- Error Message -->
+    <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
+
+    <!-- Display Results -->
+    <div v-if="countries.length > 0">
+      <div id="cardView">
+        <div v-for="country in countries" :key="country.name.common" class="card">
+          <h3>{{ country.name.common }}</h3>
+          <p><strong>Capital:</strong> {{ country.capital && country.capital.length > 0 ? country.capital[0] : 'N/A' }}
+          </p>
+          <p><strong>Population:</strong> {{ country.population.toLocaleString() }}</p>
+          <img :src="country.flags.png" :alt="`${country.name.common} flag`" width="100">
+        </div>
+      </div>
+
+      <table id="tableView">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Population</th>
+            <th>Flag</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="country in countries" :key="country.name.common">
+            <td>{{ country.name.common }}</td>
+            <td>{{ country.capital && country.capital.length > 0 ? country.capital[0] : 'N/A' }}</td>
+            <td>{{ country.population.toLocaleString() }}</td>
+            <td><img :src="country.flags.png" :alt="`${country.name.common} flag`" width="50"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Information Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Country Information Finder</h1>
+    <div class="search-container">
+    <input type="text" id="countryInput" placeholder="Enter country name">
+    <button id="searchButton">Search</button>
+    </div>
+
+    <!-- Error Message -->
+    <p id="errorMessage" class="error"></p>
+
+    <!-- Display Results -->
+    <div id="results">
+      <div id="cardView"></div>
+      <table id="tableView">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Population</th>
+            <th>Flag</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
