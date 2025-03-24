@@ -61,7 +61,7 @@ if you want to run JS
 cd JS
 ```
 
-Open the index.html file in your browser
+Open the `index.html` file in your browser
 
 if you want to run Vue
 
@@ -69,4 +69,4 @@ if you want to run Vue
 cd Vue
 ```
 
-Open the index.html file in your browser
+Open the `index.html` file in your browser
