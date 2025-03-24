@@ -5,24 +5,24 @@ Users can search for a country by name and see its details, including the name, 
 
 ## Features
 
--Search for a country by name.
+- Search for a country by name.
 
--Display results in two formats:
+- Display results in two formats:
 
--Card View : Each country is displayed as a card with details.
+- Card View : Each country is displayed as a card with details.
 
--Table View : Results are displayed in a structured table format.
+- Table View : Results are displayed in a structured table format.
 
--Proper error handling for invalid input or API errors.
+- Proper error handling for invalid input or API errors.
 
--Responsive design for better user experience.
+- Responsive design for better user experience.
 
 ## Technologies Used
 
--HTML : Structure of the application.
--CSS : Styling for the UI.
--JavaScript : Fetching data from the REST Countries API using fetch.
--Vue.js : Framework for reactive and dynamic rendering.
+- HTML : Structure of the application.
+- CSS : Styling for the UI.
+- JavaScript : Fetching data from the REST Countries API using fetch.
+- Vue.js : Framework for reactive and dynamic rendering.
 
 ## API Used
 
@@ -61,7 +61,7 @@ if you want to run JS
 cd JS
 ```
 
-Open the index.html file in your browser
+Open the `index.html` file in your browser
 
 if you want to run Vue
 
@@ -69,7 +69,7 @@ if you want to run Vue
 cd Vue
 ```
 
-Open the index.html file in your browser
+Open the `index.html` file in your browser
 
 ## Screenshots
 
