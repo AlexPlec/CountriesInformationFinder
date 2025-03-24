@@ -70,3 +70,7 @@ cd Vue
 ```
 
 Open the index.html file in your browser
+
+## Screenshots
+
+![Country View](./screenshots/CountryView.png)
